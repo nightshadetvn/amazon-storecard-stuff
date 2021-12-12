@@ -1,15 +1,18 @@
+#importy
 import random
 import string
 import os
 
+#clear and how much does the card is expected to have
 os.system('cls')
 print("wpisz ile kaflową oczekuje karte")
-y = input()
+kafle = input()
 
+# clear
 os.system('cls')
 
 
-
+# title screen <3
 print(r"""
  _____                                      
   /  _  \   _____ _____  ____________   ____  
@@ -28,15 +31,19 @@ _________ .__                   __
 /    \  \/|  |  \_/ __ \_/ ___\|  |/ // __ \_  __ \
 \     \___|   Y  \  ___/\  \___|    <\  ___/|  | \/
  \______  /___|  /\___  >\___  >__|_ \\___  >__|   
-        \/     \/     \/     \/     \/    \/     """)
+        \/     \/     \/     \/     \/    \/     
 
+                """)
+
+# rng setup
 S = 3
 ran = ''.join(random.choices(string.digits, k=S))
 
-
+# ask for card number
 print("input card number : ")
-x = input()
+numer = input()
 
-print('the value of the card ' + x + ' is ' + y + str(ran) + '$')
+# fake balance viewer
+print('the value of the card ' + numer + ' is ' + kafle + str(ran) + '$')
 input("Press enter to exit")
 

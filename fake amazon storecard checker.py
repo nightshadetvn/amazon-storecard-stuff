@@ -5,7 +5,7 @@ import os
 
 #clear and how much does the card is expected to have
 os.system('cls')
-print("How much does the client expect the card to have?")
+print("How much does the client expect the card to have? (in thousands)")
 amount = input()
 
 # clear
